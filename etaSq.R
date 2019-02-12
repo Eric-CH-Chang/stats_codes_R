@@ -1,4 +1,3 @@
-#### Function for Computing Eta Square ####
 #' Compute eta-square from the output of ezANOVA
 #' This function only works for the output from ezANOVA
 #' 
@@ -8,8 +7,6 @@
 #' @return Eta-square of each main effect and interaction effect
 #' 
 etaSq_ez <- function(output_ezANOVA,nFactor_within,nFactor_between){
-  # Input:
-  #     output_ezANOVA
   
   # Number of effects in the ezANOVA table (including intercept)
   nEffect_raw <- dim(output_ezANOVA$ANOVA)[1] 
